@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class UrunYorumDto {
+    private Long id;
     private String urunAdi;
     private String kategoriAdi;
     private BigDecimal urunFiyati;
@@ -17,8 +18,15 @@ public class UrunYorumDto {
     private String yorum;
     private Date yorumTarihi;
 
-    public UrunYorumDto(String urunAdi, String kategoriAdi, BigDecimal urunFiyati, String adi, String soyadi,
+    public UrunYorumDto() {
+    }
+
+    public UrunYorumDto(String urunAdi, BigDecimal urunFiyati) {
+    }
+
+    public UrunYorumDto(Long id, String urunAdi, String kategoriAdi, BigDecimal urunFiyati, String adi, String soyadi,
                         String email, String telefon, String yorum, Date yorumTarihi) {
+        this.id = id;
         this.urunAdi = urunAdi;
         this.kategoriAdi = kategoriAdi;
         this.urunFiyati = urunFiyati;
@@ -28,6 +36,14 @@ public class UrunYorumDto {
         this.telefon = telefon;
         this.yorum = yorum;
         this.yorumTarihi = yorumTarihi;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getUrunAdi() {

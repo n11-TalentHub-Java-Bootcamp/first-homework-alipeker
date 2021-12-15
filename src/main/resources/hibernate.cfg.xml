@@ -24,6 +24,7 @@
         <!-- Annotated com.alipeker.entity classes -->
         <mapping class="com.alipeker.entity.Kategori"/>
         <mapping class="com.alipeker.entity.Urun"/>
-
+        <mapping class="com.alipeker.entity.UrunYorum"/>
+        <mapping class="com.alipeker.entity.Kullanici"/>
     </session-factory>
 </hibernate-configuration>

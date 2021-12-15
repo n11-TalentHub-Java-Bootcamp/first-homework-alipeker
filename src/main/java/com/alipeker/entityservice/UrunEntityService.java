@@ -47,4 +47,4 @@ public class UrunEntityService {
         return urunDao.findAllUrunDetayDtoByKategoriKirilim(kirilim);
     }
 
-    }
+}

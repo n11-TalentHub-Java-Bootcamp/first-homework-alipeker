@@ -25,7 +25,7 @@ public class Kategori {
     private Long kirilim;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "ID_UST_KATEGORI")
+    @JoinColumn(name = "UST_KATEGORI_ID")
     private Kategori ustKategori;
 
     public Long getId() {
